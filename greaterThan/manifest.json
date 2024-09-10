@@ -1,0 +1,42 @@
+{
+  "name": "greaterThan",
+  "label": "Greater Than",
+  "type": "widget",
+  "version": "1.12.0",
+  "exbVersion": "1.12.0",
+  "author": "Esri R&D Center Beijing",
+  "description": "This is the widget used in developer guide",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "dependency": "jimu-arcgis",
+  "properties": {
+    "canConsumeDataAction": true
+  },
+  "excludeDataActions": [
+    "table.*",
+    "setFilter",
+    "arcgis-map.*"
+  ],
+  "messageActions": [
+    {
+      "name": "locate",
+      "label": "Set location",
+      "uri": "message-actions/set-location-message-action"
+    }
+  ],
+  "dataActions": [
+    {
+      "name": "locate",
+      "label": "Set location",
+      "uri": "data-actions/set-location-data-action",
+      "icon": "runtime/assets/icons/nearme-icon.svg"
+    }
+  ],
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 350,
+    "height": 400
+  }
+}
